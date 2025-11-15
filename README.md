@@ -2,6 +2,11 @@
 
 A modern, full-stack web application for viewing and analyzing data from the WideWorldImporters SQL Server database. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
+
+Youtube video:
+https://youtu.be/t1tCLjmBM7w
+
+
 ## 📚 Documentation
 
 - **[QUICK_START.md](./QUICK_START.md)** - Get started in 3 minutes
