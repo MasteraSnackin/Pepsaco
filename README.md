@@ -4,7 +4,14 @@ A modern, full-stack web application for viewing and analyzing data from the Wid
 
 
 Youtube video:
-https://youtu.be/t1tCLjmBM7w
+https://youtu.be/t1tCLjmB
+
+<img width="1740" height="841" alt="Screenshot 2025-11-15 123027" src="https://github.com/user-attachments/assets/8e199a03-4a1a-4531-88b5-f15670171f3b" />
+<img width="1732" height="851" alt="Screenshot 2025-11-15 123004" src="https://github.com/user-attachments/assets/e60c8448-27f2-43d7-935c-902415b46bac" />
+<img width="1741" height="865" alt="Screenshot 2025-11-15 122939" src="https://github.com/user-attachments/assets/8cd67030-b5e7-4ed3-82a5-f8a837850b8e" />
+<img width="1738" height="855" alt="Screenshot 2025-11-15 122903" src="https://github.com/user-attachments/assets/52d52b36-deb3-4804-a5b7-4f6e234a9982" />
+<img width="1453" height="853" alt="Screenshot 2025-11-15 122838" src="https://github.com/user-attachments/assets/f3459bda-4597-4b30-9258-a8ce0502e771" />
+M7w
 
 
 ## 📚 Documentation
