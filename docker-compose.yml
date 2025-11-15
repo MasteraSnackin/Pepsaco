@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  pepsaco-db-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pepsaco-db-viewer
+    ports:
+      - "3000:3000"
+    environment:
+      # Database Configuration
+      - DB_HOST=${DB_HOST:-pepsaco-db-standard.c1oqimeoszvd.eu-west-2.rds.amazonaws.com}
+      - DB_PORT=${DB_PORT:-1433}
+      - DB_DATABASE=${DB_DATABASE:-WideWorldImporters_Base}
+      - DB_USER=${DB_USER:-hackathon_ro_03}
+      - DB_PASSWORD=${DB_PASSWORD:-Z9@fLm2*}
+      
+      # AI Configuration (Optional)
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      
+      # Application Configuration
+      - NODE_ENV=production
+      - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+    
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/api/tables"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    networks:
+      - pepsaco-network
+
+networks:
+  pepsaco-network:
+    driver: bridge
